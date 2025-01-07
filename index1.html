@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Gestion des Documents et Véhicules</title>
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
+        .content { padding: 40px; }
+        .table-container { overflow-x: auto; background-color: white; padding: 20px; margin-bottom: 40px; }
+        .btn { padding: 10px 20px; border-radius: 5px; margin-right: 10px; }
+        .btn-primary { background-color: #28a745; }
+        .btn-warning { background-color: #ffc107; }
+        .btn-danger { background-color: #dc3545; }
+        h2.section-title { margin-bottom: 20px; color: #343a40; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Gestion des Documents et Véhicules</h2>
+    </div>
+
+    <div class="content">
+        <!-- Documents Section -->
+        <div class="table-container">
+            <h2 class="section-title">Liste des Documents Légaux</h2>
+            <a href="ajoutDocument.html" class="btn btn-primary">Ajouter un document</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID Document</th>
+                        <th>Type</th>
+                        <th>Date de Validité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Permis de conduire</td>
+                        <td>2025-12-31</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carte grise</td>
+                        <td>2024-06-15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Assurance</td>
+                        <td>2023-11-01</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Vehicles Section -->
+        <div class="table-container">
+            <h2 class="section-title">Liste des Véhicules</h2>
+            <a href="ajoutVehicule.html" class="btn btn-primary">Ajouter un véhicule</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID Véhicule</th>
+                        <th>Type</th>
+                        <th>État</th>
+                        <th>Marque</th>
+                        <th>Modèle</th>
+                        <th>Année de Fabrication</th>
+                        <th>Document Associé</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Voiture</td>
+                        <td>Disponible</td>
+                        <td>Peugeot</td>
+                        <td>208</td>
+                        <td>2021</td>
+                        <td>Permis de conduire</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Camion</td>
+                        <td>En réparation</td>
+                        <td>Renault</td>
+                        <td>Master</td>
+                        <td>2018</td>
+                        <td>Carte grise</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Moto</td>
+                        <td>Disponible</td>
+                        <td>Yamaha</td>
+                        <td>R1</td>
+                        <td>2020</td>
+                        <td>Assurance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
